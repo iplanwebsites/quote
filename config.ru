@@ -1,10 +1,6 @@
-require "rubygems"
-require "bundler"
-Bundler.require
 
-set :root, File.dirname(__FILE__)
-set :views, File.dirname(__FILE__) + "/views"
-set :public, "public"
 
-require "./app.rb"
+
+#require 'main'
+require File.join(File.dirname(__FILE__), 'main')
 run Sinatra::Application

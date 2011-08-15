@@ -1,14 +1,16 @@
-source :gemcutter
-gem "sinatra", ">=1.2.6"
-gem "haml", ">=3.1.1"
-gem "sass", ">=3.1.1"
-gem "datamapper", ">=1.1.0"
+source 'http://rubygems.org'
 
-group :development do
-	gem "dm-sqlite-adapter", ">=1.1.0"
-	gem "shotgun"
-end
+gem 'sinatra'
+gem 'haml'
+gem 'sass'
+gem 'json'
+# gem 'digest/sha1' # Possibly required?
 
-group :production do
-	gem "dm-postgres-adapter", ">=1.1.0"
+group :development, :test do
+  gem 'autotest'
+  gem 'autotest-inotify'
+  gem 'rack-test'
+  gem 'rspec'
+  gem 'shotgun'
+  gem 'test_notifier'
 end
