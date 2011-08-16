@@ -33,6 +33,14 @@ get "/css/style.css" do
   sass :"css/style"
 end
 
+
 get "/" do
   haml :index
 end
+
+
+
+get "/perte-de-signal" do
+  haml :perte
+end
+

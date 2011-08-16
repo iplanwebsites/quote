@@ -63,9 +63,9 @@ input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5
 .no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
 
 
-::-moz-selection{ background: #bed600; color:#fff; text-shadow: none; }
-::selection { background:#bed600; color:#fff; text-shadow: none; }
-a:link { -webkit-tap-highlight-color: #bed600; }
+::-moz-selection{ background: #1ed650; color:#fff; text-shadow: none; }
+::selection { background:#1ed650; color:#fff; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: #1ed650; }
 button {  width: auto; overflow: visible; }
 .ie7 img { -ms-interpolation-mode: bicubic; }
 
