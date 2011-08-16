@@ -2,11 +2,13 @@
 
 
 h1, h2, h3, h4{
-	font-family: 'gothamBold';
+	font-family: 'gothamBold', arial, verdana;
 	font-size: 34px;
 	color:#333;
 }
 
+
+a, a:visited, a:hover{ color: #292;}
 
 h1, h2, h3, h4, p{
 	line-height:0.9em;
@@ -20,7 +22,7 @@ h3{font-size: 22px; }
 body{background:#ccc;  font-size:16px;}
 #main{ background:#fff; padding-top:30px; margin:15px 0; padding-left:40px; padding-right:40px;  }
 
-hr{ background:#333; height:10px; margin: 0px 0px;}
+hr{ background:#333; height:1px; margin: 0px 0px; border-bottom:solid 10px #333;}
 a.url{ float:right; background:#333; padding:3px 10px; padding-top:0px; color:#fff; text-decoration:none;  }
 a.url:hover{ color: #0f0; }
 
@@ -28,7 +30,8 @@ a.url:hover{ color: #0f0; }
 	line-height:1em;
 	letter-spacing:-10px; text-transform:uppercase; text-align:right;
 	margin-top:-20px;
-	font-family: 'GothamLight';
+	font-family: 'GothamLight', arial, verdana;
+	font-weight:normal;
 	}
 
 #me{float:right; width:370px; padding:0; margin-right:233px; }
@@ -37,8 +40,9 @@ a.url:hover{ color: #0f0; }
 
 #client p span, #me p span{ display:block;}
 
-#logo{float:left;}
+#logo, img.logo{float:left;}
 #logo h1{
+	text-transform:uppercase;
 	background: #333;
 	color: #fff;
 	padding:3px 8px;
@@ -47,10 +51,12 @@ a.url:hover{ color: #0f0; }
 	font-size:40px;
 	display:inline;
 	padding:5px 10px;
+	padding-left:20px;
 	padding-right:40px;
 	margin-top:40px;
 	line-height:1.5em;
 }
+img.logo{display:none;}
 
 ul li{
 	margin:0px;
@@ -72,4 +78,15 @@ p, h1, li, strong, h2,h3{
 transition: all 0.2s ease-in-out;
 }
 p:hover, h1:hover, li:hover, strong:hover, h2:hover, h3:hover{ background:#bfb;}
+
+
+
+
+@media print {
+	a.url{ display:none; }
+	img.logo{display:block;}
+	#logo{display:none}
+	.page-break { page-break-before:always;  }
+}
+
 
